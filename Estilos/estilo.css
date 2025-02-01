@@ -1,24 +1,37 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: fonte-header;
+  src: url('../Fontes/Naturaly.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 header {
-  background: #fff;
+  font-size: 2em;
+  font-family: fonte-header, sans-serif;
 }
 .cabecalho {
   display: flex;
+  width: 100%;
+  height: auto;
+  padding-bottom: 4px;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  background-color: #daa520;
   gap: 10px;
 }
 .cabecalho-imagem {
   display: flex;
 }
 .cabecalho-imagem img {
-  background: #ffcbdb;
+  width: 120px;
+  padding: 4px 0px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px 1px #000000;
 }
 .cabecalho-menu,
 a {
