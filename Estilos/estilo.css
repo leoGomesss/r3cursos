@@ -1,14 +1,19 @@
 @charset "UTF-8";
-
+/*Fontes*/
 @font-face {
   font-family: fonte-header;
-  src: url('../Fontes/Naturaly.otf');
+  src: url("../Fontes/Naturaly.otf");
 }
-
+@font-face {
+  font-family: fonte-titulo;
+  src: url("../Fontes/Maria_lucia.ttf");
+}
+/*Estilos Globais*/
 * {
   margin: 0;
   padding: 0;
 }
+/*Header e Cabeçalho com menu*/
 header {
   font-size: 2em;
   font-family: fonte-header, sans-serif;
@@ -38,7 +43,7 @@ a {
   font-size: 1em;
   color: #000000;
   text-decoration: none;
-  padding: 2px;  
+  padding: 2px;
 }
 a:hover {
   border: 1px solid #daa520;
@@ -48,40 +53,27 @@ a:hover {
   font-weight: bold;
   color: #fff;
 }
-main {
-  border: 1px solid blue;
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: #f4d195;
+/*Título*/
+#titulo {
+  margin: 7px auto;
+  text-align: center;
+  font-family: fonte-titulo;
+  font-size: 2.5em;
 }
-section {
-  width: 25%;
-  padding: 1px 0px 1px 5px;
-}
-aside {
-  width: 25%;
-  padding: 1px 15px 1px 5px;
-}
-.conteudo-principal {
-  width: 50%;
-  padding: 1px 0px 1px 5px;
-}
-@media (max-width: 600px) {
+/*Conteúdo Principal*/
+/*Media do Cabeçalho e Menu*/
+@media (max-width: 480px) {
   .cabecalho {
     flex-flow: column wrap;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .cabecalho-imagem {
     display: flex;
     justify-content: center;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .cabecalho-menu,
   a {
     display: flex;
@@ -91,49 +83,7 @@ aside {
   }
 }
 @media (max-width: 600px) {
-  main {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4d195;
-  }
-}
-@media (max-width: 600px) {
-  section {
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  section p {
-    padding-top: 1px;
-    padding-left: 5px;
-    text-align: left;
-  }
-}
-@media (max-width: 600px) {
-  .conteudo-principal {
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .conteudo-principal p {
-    padding-top: 1px;
-    padding-left: 5px;
-    text-align: left;
-  }
-}
-@media (max-width: 600px) {
-  aside {
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  aside p {
-    padding-top: 1px;
-    padding-left: 5px;
-    text-align: left;
+  #titulo {
+    font-size: 1.4em;
   }
 }
