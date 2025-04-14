@@ -144,6 +144,27 @@ main {
   justify-content: center;
   align-items: flex-start;
 }
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: #191970;
+}
+footer{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #daa520;
+}
 /*Media do Cabeçalho e Menu*/
 @media (max-width: 480px) {
   .cabecalho {
@@ -171,11 +192,15 @@ main {
   }
 }
 @media (max-width: 600px) {
+  #titulo {
+      font-size: 1.7em;
+  }
+  
   .slider {
-    margin: 0 auto;
-    width: 400px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 3px;
+      margin: 0 auto;
+      width: 400px;
+      height: 100px;
+      overflow: hidden;
+      border-radius: 3px;
   }
 }
