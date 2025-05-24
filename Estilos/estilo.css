@@ -231,7 +231,7 @@ footer {
 @media (max-width: 480px) {
   .manualNavegacao {
     display: flex;
-    margin: 65% 37%;
+    margin: 70% 37%;
     position: absolute;
     width: auto;
     height: auto;
@@ -245,4 +245,17 @@ footer {
     cursor: pointer;
     transition: 1s;
   }
+}
+@media (max-width: 480px) {
+  section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 3px auto;
+  padding: 1%;
+  width: 80%;
+  height: auto;
+  border-radius: 7px;
+}
 }
